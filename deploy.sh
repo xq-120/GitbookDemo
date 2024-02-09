@@ -1,7 +1,3 @@
-# 切换到上一级目录
-echo '切换到上一级目录\n'
-cd ..
-
 # 构建Gitbook
 echo '执行命令：gitbook build .'
 gitbook build .
@@ -12,7 +8,7 @@ cd ./_book
 
 # 初始化一个仓库，仅仅是做了一个初始化的操作，项目里的文件还没有被跟踪
 echo "执行命令：git init\n"
-git init
+git init -b master
 
 # 解决使用git add命令时报错LF will be replaced by CRLF的问题
 echo '执行命令：git config auto.crlf true\n'
